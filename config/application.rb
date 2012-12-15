@@ -58,5 +58,8 @@ module Omrails
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    # Prevent data compilation errors from the app trying to connect to the database.
+    config.assets.initialize_on_precompile = false
   end
 end
